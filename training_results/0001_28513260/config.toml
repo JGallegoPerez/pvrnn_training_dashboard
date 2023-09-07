@@ -1,0 +1,74 @@
+[dataset]
+dataset_path = "/home/j/jorge-gallego/Code/LibPvrnn/datasets/touchlift_14_3600_14.npy"
+n_seq = 14
+seq_len = 3600
+output_size = 14
+minibatch_size = 14
+
+[network]
+sigma_min = 0.0
+sigma_max = 0.0
+zero_init = false
+[[network.layers]]
+type = "fc"
+
+[[network.layers]]
+type = "pvrnn"
+d = 30
+z = 2
+tau = 3
+w = 0.01
+beta = 1.0
+
+[[network.layers]]
+type = "pvrnn"
+d = 20
+z = 1
+tau = 9
+w = 0.01
+beta = 1.0
+
+[training]
+rng_seed = 3
+n_epoch = 200000
+save_interval = 1000
+save_directory = "train"
+backend = "cpp"
+
+[er]
+save_directory = "touch_lift/er"
+window_size = 100
+grow_window = true
+epoch_to_load = -1
+n_itr = 5
+pred_step = 4
+total_step = 6000
+w = []
+beta = []
+backend = "cpp"
+
+[dataset.norm]
+enable = true
+raw_min = 0
+raw_max = 0
+min = -0.7
+max = 0.7
+
+[training.optimizer]
+name = "adam"
+
+[er.optimizer]
+name = "adam"
+
+[training.optimizer.adam]
+alpha = 0.001
+beta1 = 0.9
+beta2 = 0.999
+eps = 0.0001
+weight_decay = 0.0
+
+[er.optimizer.adam]
+alpha = 0.001
+beta1 = 0.9
+beta2 = 0.999
+eps = 0.0001
