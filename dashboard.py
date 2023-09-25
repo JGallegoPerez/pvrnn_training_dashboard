@@ -142,7 +142,7 @@ def compute_info(train_res, w_str, timesteps):
         utils.unzip(z, os.path.basename(y)) 
 
     # Target (we will use only the first sequence later). (3D array). 
-    target_path = '/home/jorge/Code/LibPvrnn/datasets/touchlift_14_3600_14.npy' ### NEEDS TO BE ADDED TO REPO ###
+    target_path = os.path.join(os.getcwd(), 'training_results/touchlift_14_3600_14.npy') 
 
     # Obtain ndarrays for the plots for the two layers 
     var_begin = 0
