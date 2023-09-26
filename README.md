@@ -23,6 +23,8 @@ One more example, with different *w* settings and a shorter timestep range:
 
 Clone the repository, or save all the files in the same directory. 
 
+Install the dependencies from the *requirements.txt* file.
+
 We execute the program from the command line. The following command options must be entered:
 - [-t] -> The title to give to the dashboard. Between quotes.
 - [-d] -> The path of the directory where the results subdirectories are located.
