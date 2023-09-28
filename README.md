@@ -13,11 +13,11 @@ It features a dropdown menu to toggle between the *w* combinations, and a range 
 
 See one example below:
 
-![dash1](https://github.com/JGallegoPerez/pvrnn_training_dashboard/assets/89183135/67ff5d31-bb5c-4880-a3ce-ad85645f6646)
+![dash1](https://github.com/JGallegoPerez/pvrnn_training_dashboard/assets/89183135/ec4bae35-bcba-43cb-8c0c-4a5c7de4c77a)
 
 One more example, with different *w* settings and a shorter timestep range:
 
-![dash2](https://github.com/JGallegoPerez/pvrnn_training_dashboard/assets/89183135/466150b4-b32a-4c5d-9ab9-c083dbc9d6a4)
+![dash2](https://github.com/JGallegoPerez/pvrnn_training_dashboard/assets/89183135/879f2ee1-f9bf-4fcf-965c-c8fed92174d7)
 
 ## How to use
 
