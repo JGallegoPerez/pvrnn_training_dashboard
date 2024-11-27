@@ -1,4 +1,4 @@
-# pvrnn_training_dashboard
+# RNN_training_dashboard
 Dashboard using Dash and Plotly to visualize PVRNN training results.
 
 This repository showcases a Dashboard that I run locally to help me inspect the training results of a PVRNN network. The files that I use are very specific to the implementation that trained the network and 
